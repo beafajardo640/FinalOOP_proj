@@ -87,7 +87,7 @@ public class AudioManager {
         }).start();
     }
 
-    // ✅ Mute / Unmute background and effects - MODIFIED
+    // Mute / Unmute background and effects
     public static void setMuted(boolean muted) {
         if (isMuted == muted) return;
         isMuted = muted;
@@ -99,7 +99,7 @@ public class AudioManager {
         }
     }
 
-    // ✅ ADD THIS: Mute/Unmute only sound effects (for souON/souOFF buttons)
+    //Mute/Unmute only sound effects (for souON/souOFF buttons)
     public static void setEffectsMuted(boolean muted) {
         isEffectsMuted = muted;
     }
@@ -108,12 +108,12 @@ public class AudioManager {
         return isMuted;
     }
 
-    // ✅ ADD THIS: Check if effects are muted
+    //Check if effects are muted
     public static boolean isEffectsMuted() {
         return isEffectsMuted;
     }
 
-    // ✅ Check if background music is stopped
+    //Check if background music is stopped
     public static boolean isBackgroundStopped() {
         return backgroundClip == null || !backgroundClip.isRunning();
     }

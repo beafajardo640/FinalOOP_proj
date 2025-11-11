@@ -35,7 +35,7 @@ public class Options extends javax.swing.JFrame {
         setupMuteButton();
     }
   private void setupMuteButtons() {
-        // I-patong ang OFF button sa ON button
+        // patong ang OFF button sa ON button
         OFFBU.setBounds(ON.getBounds());
         
         // Remove button styling
@@ -72,7 +72,7 @@ public class Options extends javax.swing.JFrame {
     }
  } 
    private void setupMuteButton(){
-    // I-patong ang souOFF sa souON
+    // patong ang souOFF sa souON
     souOFF.setBounds(souON.getBounds());
     
     // Remove button styling
@@ -91,8 +91,6 @@ public class Options extends javax.swing.JFrame {
 }
 
 private void soundStat(){
-    // Debug: Check kung narereach ang method na ito
-    System.out.println("soundStat called - isMuted: " + AudioManager.isMuted());
     
     if (AudioManager.isEffectsMuted()) {
         // Sound OFF
@@ -185,25 +183,25 @@ private void soundStat(){
         offText.setText("  OFF");
         getContentPane().add(offText, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 420, 60, 30));
 
-        souON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/audio.png"))); // NOI18N
+        souON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ONBUTTON.png"))); // NOI18N
         souON.setContentAreaFilled(false);
         souON.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 souONActionPerformed(evt);
             }
         });
-        getContentPane().add(souON, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 300, 110, 110));
+        getContentPane().add(souON, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 130, 110));
 
-        souOFF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/audiomuted.png"))); // NOI18N
+        souOFF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/OFFBUTTON.png"))); // NOI18N
         souOFF.setContentAreaFilled(false);
         souOFF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 souOFFActionPerformed(evt);
             }
         });
-        getContentPane().add(souOFF, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 300, 130, 110));
+        getContentPane().add(souOFF, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 130, 110));
 
-        ON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ONBUTTON.png"))); // NOI18N
+        ON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/audio.png"))); // NOI18N
         ON.setContentAreaFilled(false);
         ON.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -212,7 +210,7 @@ private void soundStat(){
         });
         getContentPane().add(ON, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 300, -1, 120));
 
-        OFFBU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/OFFBUTTON.png"))); // NOI18N
+        OFFBU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/audiomuted.png"))); // NOI18N
         OFFBU.setContentAreaFilled(false);
         OFFBU.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -271,7 +269,7 @@ private void soundStat(){
             @Override
             public void run() {
                 AudioManager.setEffectsMuted(true); // Mute effects only
-                soundStat(); // Update UI
+                soundStat();
             }
         }, 
         300 // Wait for sound to play

@@ -165,7 +165,7 @@
     <Component class="javax.swing.JButton" name="souON">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/images/audio.png"/>
+          <Image iconType="3" name="/images/ONBUTTON.png"/>
         </Property>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
@@ -174,14 +174,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="290" y="300" width="110" height="110"/>
+          <AbsoluteConstraints x="280" y="310" width="130" height="110"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="souOFF">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/images/audiomuted.png"/>
+          <Image iconType="3" name="/images/OFFBUTTON.png"/>
         </Property>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
@@ -190,14 +190,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="278" y="300" width="130" height="110"/>
+          <AbsoluteConstraints x="280" y="310" width="130" height="110"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="ON">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/images/ONBUTTON.png"/>
+          <Image iconType="3" name="/images/audio.png"/>
         </Property>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
@@ -213,7 +213,7 @@
     <Component class="javax.swing.JButton" name="OFFBU">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/images/OFFBUTTON.png"/>
+          <Image iconType="3" name="/images/audiomuted.png"/>
         </Property>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
